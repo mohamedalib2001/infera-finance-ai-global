@@ -1,0 +1,220 @@
+أنت مجلس تأسيسي عالمي مكوّن من:
+- Global FinTech Architect
+- AI Chief Technology Officer (AI-CTO)
+- Enterprise Financial Systems Engineer
+- Banking & Payments Expert
+- Risk, Compliance & RegTech Specialist
+- Quantitative Finance & Forecasting Expert
+- UX/UI Director (Financial Platforms)
+- Cybersecurity & Cloud Infrastructure Architect
+- SaaS Monetization & Global Expansion Strategist
+
+مهمتك:
+تصميم وبناء منصة مالية عالمية متكاملة باسم:
+
+INFERA Finance AI™ – GlobalCloud™
+www.InferaFinanceGlobal.com
+
+وصف المنصة:
+منصة تحكم مالي مؤسسي عالمي مدعومة بالذكاء الاصطناعي، تعمل كسحابة مالية موحدة (Global Financial Cloud) لإدارة، تحليل، تنبؤ، أتمتة، وحوكمة كل العمليات المالية للأفراد، الشركات، والمؤسسات الكبرى، مع دعم متعدد العملات، الدول، القوانين، والأنظمة البنكية.
+
+────────────────────────────────
+1️⃣ الرؤية الاستراتيجية
+────────────────────────────────
+- أن تصبح INFERA البنية التحتية المالية الذكية للعالم
+- توحيد كل الأنظمة المالية في لوحة تحكم واحدة
+- الانتقال من التقارير المالية إلى التنبؤ والقرار الذكي
+- تمكين CFOs، البنوك، الحكومات، والشركات العابرة للقارات
+- بناء Financial Operating System عالمي
+
+────────────────────────────────
+2️⃣ الفئات المستهدفة
+────────────────────────────────
+- الأفراد ذوي الثروات العالية (HNWIs)
+- الشركات الصغيرة والمتوسطة
+- المؤسسات الكبرى (Enterprise)
+- البنوك الرقمية والتقليدية
+- الحكومات والهيئات
+- صناديق الاستثمار وVCs
+- شركات المحاسبة والتدقيق
+
+────────────────────────────────
+3️⃣ الوحدات المالية الأساسية (Core Financial Modules)
+────────────────────────────────
+- Accounting Engine (IFRS / GAAP)
+- General Ledger (GL)
+- Accounts Payable / Receivable
+- Cash Flow Management
+- Budgeting & Forecasting
+- Treasury Management
+- Expense Management
+- Payroll (Global)
+- Tax Management (Multi-country)
+- Asset & Portfolio Management
+- Financial Consolidation (Multi-Entity)
+
+────────────────────────────────
+4️⃣ الذكاء الاصطناعي المالي (Financial AI Core)
+────────────────────────────────
+- AI CFO Assistant
+- Financial Forecasting Models
+- Scenario Simulation & Stress Testing
+- Anomaly & Fraud Detection
+- Smart Recommendations (Cost, Risk, Growth)
+- Predictive Cash Flow
+- AI-driven Budget Optimization
+- Natural Language Financial Queries
+- Auto-Generated Financial Reports
+- Self-learning Financial Models
+
+────────────────────────────────
+5️⃣ المنصة البنكية والمدفوعات (Banking & Payments)
+────────────────────────────────
+- Open Banking Integration
+- SWIFT / SEPA / ACH
+- Digital Wallets
+- Multi-Currency Accounts
+- Cross-Border Payments
+- Crypto & Digital Assets (Optional)
+- Virtual & Physical Cards
+- Escrow & Smart Contracts
+- Real-time Settlement
+
+────────────────────────────────
+6️⃣ إدارة المخاطر والامتثال (Risk & Compliance)
+────────────────────────────────
+- AML / KYC / KYB
+- Fraud Prevention Engine
+- Credit Risk Scoring
+- Regulatory Compliance Engine
+- Country-based Rules Engine
+- Audit Trails
+- Automated Compliance Reporting
+- Basel / SOX / GDPR Ready
+
+────────────────────────────────
+7️⃣ التحليلات ولوحات التحكم
+────────────────────────────────
+- Executive Dashboards
+- Real-time Financial KPIs
+- AI Insights & Alerts
+- Comparative Analytics
+- Multi-Entity & Multi-Region Views
+- Board-level Reports
+- Custom Report Builder
+
+────────────────────────────────
+8️⃣ المستخدمون والصلاحيات (Enterprise IAM)
+────────────────────────────────
+- Multi-Tenant Global SaaS
+- Roles:
+  - Super Admin
+  - Global Admin
+  - CFO
+  - Finance Manager
+  - Auditor
+  - Analyst
+- Granular Permissions
+- Approval Workflows
+- Activity & Audit Logs
+- Zero-Trust Access Model
+
+────────────────────────────────
+9️⃣ الاشتراكات والتسعير العالمي
+────────────────────────────────
+- Individual
+- Business
+- Enterprise
+- Banking / Government
+- Usage-based Pricing
+- Region-based Pricing
+- White-Label Licensing
+- API Monetization
+
+────────────────────────────────
+🔟 واجهات برمجة التطبيقات (APIs & Ecosystem)
+────────────────────────────────
+- Finance APIs
+- Banking APIs
+- Reporting APIs
+- AI Decision APIs
+- Webhooks
+- Partner Marketplace
+- Developer Portal
+
+────────────────────────────────
+1️⃣1️⃣ تجربة المستخدم (UX/UI)
+────────────────────────────────
+- Global Financial Dashboard
+- AI Chat Interface
+- Dark / Light Mode
+- Executive-friendly UI
+- Mobile + Web
+- Localization (Language, Currency, Law)
+- Arabic / English / Global Languages
+
+────────────────────────────────
+1️⃣2️⃣ البنية التقنية العالمية (Global Tech Stack)
+────────────────────────────────
+Frontend:
+- Next.js / React
+- High-performance Charts
+
+Backend:
+- Microservices Architecture
+- Node.js / Java / Python
+
+AI:
+- LLMs (GPT-4.1+)
+- Financial Reasoning Models
+- Time-Series Models
+- RAG + Vector Databases
+
+Data:
+- PostgreSQL
+- Data Warehouse
+- Real-time Streaming
+
+Infra:
+- Multi-Cloud (AWS / GCP / Azure)
+- Kubernetes
+- Global Load Balancing
+- High Availability & DR
+
+────────────────────────────────
+1️⃣3️⃣ الأمان السيبراني
+────────────────────────────────
+- Bank-grade Security
+- Encryption Everywhere
+- HSM
+- Key Management
+- Continuous Monitoring
+- Penetration Testing
+- Disaster Recovery
+
+────────────────────────────────
+1️⃣4️⃣ التوسع العالمي
+────────────────────────────────
+- Multi-Country Support
+- Multi-Legal Entity
+- Regulatory Adaptation Engine
+- Global Partners
+- Regional Data Residency
+
+────────────────────────────────
+1️⃣5️⃣ المطلوب منك الآن
+────────────────────────────────
+قدّم بتفصيل احترافي:
+1. Global System Architecture
+2. Financial AI Architecture
+3. Data Model & Ledger Design
+4. Risk & Compliance Engine Design
+5. Payment & Banking Flow
+6. Subscription & Monetization Logic
+7. Security & Governance Model
+8. MVP → Bank-Grade Platform Roadmap
+9. Go-To-Market Strategy
+
+تصرّف كأنك تبني البنية التحتية المالية للعالم.
+لا تكتب نظريًا.
+قدّم حلولًا حقيقية قابلة للتنفيذ على مستوى عالمي.

@@ -1,0 +1,149 @@
+THIS IS A CRITICAL, EXECUTION-ONLY DIRECTIVE.
+NO DISCUSSION. NO HIGH-LEVEL EXPLANATIONS. NO DEFERRAL.
+
+You are required to perform a FULL, HARD, PRODUCTION-GRADE
+ARCHITECTURAL AUDIT AND IMMEDIATE FIX IMPLEMENTATION.
+
+--------------------------------------------------
+MANDATORY OBJECTIVE
+--------------------------------------------------
+
+The platform MUST be capable of operating for 20 YEARS
+with ALL of the following guarantees:
+
+- Zero data loss under ANY circumstance
+- No human intervention required to recover
+- No manual fixes after deployment
+- Safe redeployments without data corruption
+- Owner account and all users NEVER lost
+- Horizontal scalability WITHOUT modifying application code
+
+If any of these fail → THE PLATFORM IS NOT ACCEPTABLE.
+
+--------------------------------------------------
+1️⃣ HARD AUDIT (NO ASSUMPTIONS)
+--------------------------------------------------
+
+Audit the platform as if:
+
+- Servers will be destroyed
+- Provider will change
+- Code will be redeployed hundreds of times
+- Data volume will grow 100x
+- No engineer will be available
+
+You MUST identify:
+- All hidden single points of failure
+- Any memory-based state
+- Any unsafe startup logic
+- Any data that can be overwritten
+- Any implicit assumptions
+
+--------------------------------------------------
+2️⃣ ZERO DATA LOSS — NON-NEGOTIABLE
+--------------------------------------------------
+
+You MUST ensure and VERIFY:
+
+- Real database backups (NOT placeholders)
+- Point-in-Time Recovery OR external pg_dump backups
+- Restore procedure is executable and tested
+- Backups stored OUTSIDE the runtime environment
+- No demo / seed / bootstrap logic can ever overwrite real data
+
+IF DATA CAN BE LOST → FAIL.
+
+--------------------------------------------------
+3️⃣ OWNER & PLATFORM IMMUTABILITY
+--------------------------------------------------
+
+You MUST enforce:
+
+- A protected owner / super-admin
+- Owner cannot be deleted, downgraded, or replaced
+- Owner survives redeployments
+- Owner identity is never re-seeded
+- Startup logic NEVER touches owner data
+
+LOSS OF OWNER ACCESS = TOTAL SYSTEM FAILURE.
+
+--------------------------------------------------
+4️⃣ STATELESS + SELF-HEALING REQUIREMENT
+--------------------------------------------------
+
+You MUST ensure:
+
+- No critical state exists in memory
+- All jobs are persistent and resumable
+- Background tasks actually RUN (not just tables)
+- Retry logic exists for all external calls
+- Circuit breakers prevent cascading failures
+- System degrades gracefully, not catastrophically
+
+--------------------------------------------------
+5️⃣ DEPLOYMENT & REDEPLOYMENT SAFETY
+--------------------------------------------------
+
+You MUST guarantee:
+
+- Redeploying does NOT:
+  - reset users
+  - reset settings
+  - reseed demo data
+  - break subscriptions
+- Migrations are safe, idempotent, and reversible
+- No destructive operation runs on startup
+
+ONE BAD DEPLOY = UNACCEPTABLE.
+
+--------------------------------------------------
+6️⃣ OBSERVABILITY IS REQUIRED
+--------------------------------------------------
+
+You MUST implement or explicitly flag:
+
+- Structured JSON logging (no console.log)
+- Health endpoints (already present is NOT enough)
+- Clear failure visibility
+- Ability to detect silent failures
+
+A system you cannot observe is NOT production-ready.
+
+--------------------------------------------------
+7️⃣ PLATFORM VS APP VERDICT
+--------------------------------------------------
+
+You MUST answer clearly:
+
+- Is this a long-lived platform or a monolithic app?
+- What EXACTLY prevents it from being a 20-year platform?
+- What MUST be fixed to remove that limitation?
+
+No marketing language. Only engineering facts.
+
+--------------------------------------------------
+8️⃣ OUTPUT FORMAT (STRICT)
+--------------------------------------------------
+
+Deliver ONLY:
+
+1. FINAL VERDICT (PASS / FAIL)
+2. BLOCKERS (must-fix before production)
+3. HIGH-RISK ITEMS
+4. MEDIUM-RISK ITEMS
+5. EXACT FIXES REQUIRED (concrete, actionable)
+6. WHAT CAN BE DEFERRED (if any)
+
+--------------------------------------------------
+FINAL RULE
+--------------------------------------------------
+
+If the platform CANNOT survive:
+- total server loss
+- forced redeploy
+- provider change
+- zero human intervention
+
+Then state clearly: **NOT READY FOR PRODUCTION**.
+
+Begin immediately.

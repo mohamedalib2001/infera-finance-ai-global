@@ -1,0 +1,146 @@
+IMMEDIATE EXECUTION DIRECTIVE — LONG-TERM PLATFORM SURVIVABILITY (20 YEARS)
+
+You are ordered to BEGIN IMMEDIATE EXECUTION to transform this platform into
+a production-grade, long-lived system capable of operating for 20 YEARS with:
+
+• ZERO data loss
+• ZERO manual recovery
+• ZERO dependence on human intervention
+• SAFE redeployments and updates
+• Horizontal scalability without code changes
+• Full survivability across restarts, crashes, and upgrades
+
+THIS IS NOT AN ANALYSIS TASK.
+THIS IS NOT A PROPOSAL.
+THIS IS EXECUTION ONLY.
+
+────────────────────────────────
+NON-NEGOTIABLE CORE REQUIREMENTS
+────────────────────────────────
+
+1) DATA IMMUTABILITY & SURVIVAL
+• No production data may exist in:
+  – local filesystem
+  – memory
+  – ephemeral storage
+• All critical data MUST survive:
+  – server restart
+  – redeploy
+  – scaling events
+  – crash recovery
+
+2) SAFE REDEPLOYMENT GUARANTEE
+• Updating the application MUST NOT:
+  – delete users
+  – reset owner/admin accounts
+  – reset subscriptions
+  – reset configuration
+  – recreate demo/seed data
+• Redeployment must be provably SAFE.
+
+────────────────────────────────
+PHASE 1 — CRITICAL FIXES (EXECUTE NOW)
+────────────────────────────────
+
+A) OWNER & PLATFORM CONTROL (BLOCKER)
+• Implement protected Owner Bootstrap:
+  – One immutable super-owner
+  – Cannot be deleted, downgraded, or reassigned
+  – Created once, guarded by environment conditions
+• Platform MUST remain controllable after ANY update.
+
+B) SEEDING SAFETY
+• Eliminate ALL automatic demo/data seeding in production.
+• Seed logic MUST be:
+  – environment-guarded
+  – idempotent
+  – impossible to trigger after production launch
+
+C) BACKUP & RESTORE (MANDATORY)
+• Implement automated database backups:
+  – Scheduled (daily minimum)
+  – External storage
+  – Retention policy
+• Implement and TEST restore procedure.
+• Data loss under any scenario is unacceptable.
+
+D) PERSISTENT FILE STORAGE
+• Move ALL files (uploads, exports, backups) to durable object storage.
+• Enable versioning.
+• Local disk storage is FORBIDDEN in production.
+
+E) SAFE DELETE STRATEGY
+• Replace hard deletes with soft-delete flags.
+• Implement recoverable deletion for all critical entities.
+• Permanent deletion must require explicit irreversible action.
+
+────────────────────────────────
+PHASE 2 — STATELESS & SELF-HEALING
+────────────────────────────────
+
+F) NO IN-MEMORY STATE
+• Remove all critical state from memory:
+  – jobs
+  – schedulers
+  – locks
+  – rate limits
+• Use durable storage (DB / Redis).
+
+G) BACKGROUND JOB SYSTEM
+• Replace in-process jobs with persistent job queue.
+• Jobs must:
+  – survive restarts
+  – retry safely
+  – avoid duplication in multi-instance environments
+
+H) HEALTH & RELIABILITY SIGNALS
+• Implement mandatory endpoints:
+  – /health
+  – /ready
+• Validate:
+  – database
+  – storage
+  – queue
+  – external dependencies
+
+────────────────────────────────
+PHASE 3 — FUTURE-PROOFING (NO CODE CHANGES)
+────────────────────────────────
+
+I) CONFIGURATION OVER CODE
+• Business rules MUST NOT be hardcoded.
+• Use database-driven configuration.
+• Feature behavior must be changeable without redeploy.
+
+J) FEATURE FLAGS
+• Implement runtime feature flags.
+• Enable safe rollout, rollback, and experimentation.
+
+K) THEMING & CONTENT FLEXIBILITY
+• Implement multi-theme system:
+  – Default theme MUST remain current live theme
+  – Additional themes must be switchable dynamically
+• Landing page content MUST be CMS-driven, not hardcoded.
+
+────────────────────────────────
+FINAL VERIFICATION (REQUIRED)
+────────────────────────────────
+
+After execution, provide:
+
+1) Explicit confirmation that:
+   • No data is lost on redeploy
+   • Owner access is permanent
+   • Updates are safe
+   • Platform can scale horizontally
+   • Platform can run for 20 years without code maintenance
+
+2) A concise checklist mapping:
+   – Each fix
+   – The risk it eliminated
+   – Why it is mandatory for long-term survival
+
+DO NOT PROCEED TO PUBLIC RELEASE
+UNTIL ALL BLOCKERS ARE FULLY RESOLVED.
+
+BEGIN EXECUTION IMMEDIATELY.

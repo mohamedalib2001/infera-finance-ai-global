@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base - Dark Theme Only */
+  --background: 222 47% 5%;       /* Deep almost black blue */
+  --foreground: 210 40% 98%;      /* Off-white */
+  
+  /* Primary - Neon Blue/Cyan */
+  --primary: 190 100% 50%;        /* Electric Cyan */
+  --primary-foreground: 222 47% 10%;
+  
+  /* Secondary - Deep Purple/Blue */
+  --secondary: 260 60% 15%;
+  --secondary-foreground: 210 40% 98%;
+  
+  /* Accent - Gold */
+  --accent: 43 96% 56%;
+  --accent-foreground: 222 47% 10%;
+  
+  /* Muted */
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  
+  /* Borders & Inputs */
+  --border: 217 33% 20%;
+  --input: 217 33% 15%;
+  --ring: 190 100% 50%;
+  
+  /* Status */
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 210 40% 98%;
+  
+  /* Card */
+  --card: 222 47% 7%;
+  --card-foreground: 210 40% 98%;
+
+  /* Fonts */
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  
+  --radius: 0.25rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* Custom Utilities for Glow Effects */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px hsla(var(--primary) / 0.5), 0 0 20px hsla(var(--primary) / 0.3);
+  }
+  
+  .text-glow-accent {
+    text-shadow: 0 0 10px hsla(var(--accent) / 0.5), 0 0 20px hsla(var(--accent) / 0.3);
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 10px hsla(var(--primary) / 0.2), inset 0 0 5px hsla(var(--primary) / 0.1);
+  }
+  
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsla(var(--border) / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsla(var(--border) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Print Styles for PDF Export */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  html, body {
+    background: white !important;
+    color: #1a1a1a !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  
+  /* Hide everything first */
+  body > * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Show only the print container */
+  #printable-report,
+  .print-container {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background: white !important;
+    z-index: 999999 !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure content inside print container is visible */
+  #printable-report *,
+  .print-container * {
+    visibility: visible !important;
+  }
+  
+  /* RTL support for printing */
+  #printable-report[dir="rtl"],
+  .print-container[dir="rtl"] {
+    direction: rtl !important;
+    text-align: right !important;
+  }
+  
+  #printable-report[dir="rtl"] table,
+  .print-container[dir="rtl"] table {
+    direction: rtl !important;
+  }
+  
+  #printable-report[dir="rtl"] th,
+  #printable-report[dir="rtl"] td,
+  .print-container[dir="rtl"] th,
+  .print-container[dir="rtl"] td {
+    text-align: right !important;
+  }
+  
+  /* Numbers should remain left-aligned in RTL for readability */
+  #printable-report[dir="rtl"] .print-number,
+  .print-container[dir="rtl"] .print-number,
+  #printable-report[dir="rtl"] td[data-type="number"],
+  .print-container[dir="rtl"] td[data-type="number"] {
+    text-align: left !important;
+    direction: ltr !important;
+  }
+  
+  /* Ensure proper table layout in RTL */
+  #printable-report[dir="rtl"] table th,
+  #printable-report[dir="rtl"] table td,
+  .print-container[dir="rtl"] table th,
+  .print-container[dir="rtl"] table td {
+    unicode-bidi: embed;
+  }
+  
+  .print-section {
+    page-break-inside: avoid;
+    margin-bottom: 20pt;
+  }
+  
+  .print-page-break {
+    page-break-before: always;
+  }
+  
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  
+  th, td {
+    padding: 8px !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+  
+  .print-positive {
+    color: #059669 !important;
+  }
+  
+  .print-negative {
+    color: #dc2626 !important;
+  }
+  
+  .print-footer {
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 10pt;
+    margin-top: 20pt;
+  }
+}
